@@ -5,8 +5,14 @@ var audio= document.getElementById('song');
 var lcd = document.getElementById('lcd');
 audio.src = songs[currentSong];
 
+function limpiarNombre(texto) {
+  var nombre = decodeURIComponent(texto);
+  var pos = nombre.lastIndexOf('/');
+  var nombre = nombre.substring(pos+1);
+  return nombre.replace('.mp3', '');
+}
 function mostrar() {
-  lcd.textContent = "Cancion";
+  lcd.textContent = limpiarNombre(songs[currentSong]);
 }
 
 function reproducir() {
