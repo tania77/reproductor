@@ -3,6 +3,7 @@ var currentSong = 0;
 
 var audio= document.getElementById('song');
 var lcd = document.getElementById('lcd');
+audio.src = songs[currentSong];
 
 function mostrar() {
   lcd.textContent = "Cancion";
@@ -10,7 +11,7 @@ function mostrar() {
 
 function reproducir() {
   mostrar();
-  audio.src = songs[currentSong];
+
   audio.play();
 }
 function pausa() {
