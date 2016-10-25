@@ -23,6 +23,7 @@ function siguiente() {
   else {
     currentSong++;
   }
+  audio.src = songs[currentSong];
   reproducir();
 }
 function anterior() {
@@ -32,5 +33,6 @@ function anterior() {
   else {
     currentSong--;
   }
+  audio.src = songs[currentSong];
   reproducir();
 }
