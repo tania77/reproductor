@@ -5,7 +5,7 @@ var audio= document.getElementById('song');
 var lcd = document.getElementById('lcd');
 
 function mostrar() {
-  lcd.innerHTML = "Cancion";
+  lcd.textContent = "Cancion";
 }
 
 function reproducir() {
