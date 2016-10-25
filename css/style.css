@@ -7,8 +7,6 @@
 }
 #lcd {
   font-family: Orbitron;
-  
-  vertical-align: middle;
   background: black;
   height: 42px;
   margin: 4px 0;
