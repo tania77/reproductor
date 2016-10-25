@@ -3,32 +3,22 @@
   <head>
     <meta charset="UTF-8">
     <title>Reproductor</title>
-    
-    
-    
-    
-        <link rel="stylesheet" href="css/style.css">
-
-    
-    
-    
-    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
-
     <div id="player">
-  <div id="lcd"></div>
-  <audio src="" id="song"></audio>
-  <button onClick=anterior()>Prev</button>
-  <button onClick="reproducir()">Play</button>
-  <button onClick="pausa()">Pausa</button>
-  <button onClick="siguiente()">Next</button>
-</div>
-    
-        <script src="js/index.js"></script>
+      <div id="lcd"></div>
+      <audio src="" id="song"></audio>
+      <button onClick=anterior()>Prev</button>
+      <button onClick="reproducir()">
+        <i class="fa fa-play"></i>
+      </button>
+      <button onClick="pausa()">Pausa</button>
+      <button onClick="siguiente()">Next</button>
+    </div>
 
-    
-    
+    <script src="js/index.js"></script>
   </body>
 </html>
